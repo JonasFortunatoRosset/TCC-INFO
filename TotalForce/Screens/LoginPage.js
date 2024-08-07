@@ -1,15 +1,9 @@
 import { StatusBar }              from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-// tela treino/suplementos/configs/pagamentos => navegacao
-
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <View style={styles.container}>
-        <View></View>
-        <View></View>
-        <View></View>
-        <View></View>
     </View>
   );
 }

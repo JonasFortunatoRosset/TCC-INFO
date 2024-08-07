@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator }   from '@react-navigation/stack';
 
 // Importação das páginas
+import { LoginPage } from './Screens/LoginPage';
 import { HomePage }    from './Screens/HomePage';
 import { StorePage }   from './Screens/StorePage';
 import { TrainPage }   from './Screens/TrainPage';
@@ -15,7 +16,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName='HomePage'>
+        <Stack.Screen name="LoginPage"    component={LoginPage}></Stack.Screen>
         <Stack.Screen name="HomePage"    component={HomePage}></Stack.Screen>
         <Stack.Screen name="StorePage"   component={StorePage}></Stack.Screen>
         <Stack.Screen name="TrainPage"   component={TrainPage}></Stack.Screen>
